@@ -2,7 +2,7 @@ variable "ssh_key" {}
 
 locals {
      BASENAME = "hpc-cluster" 
-     ZONE     = "us-east-1"
+     ZONE     = "${region}-1"
    }
 
 resource ibm_is_vpc "vpc" {
